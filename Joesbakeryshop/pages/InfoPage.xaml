@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Joesbakeryshop.pages.InfoPage" BackgroundColor="WhiteSmoke">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Operations Hours" TextColor="Black" HorizontalOptions="Center" FontSize="Large"/>
+            <Label Text=" Mon-Thurs: 11:00am-10:pm" HorizontalOptions="Center" FontSize="Medium"/>
+            <Label Text=" Fri-Sun: 11:00am-11:00pm" HorizontalOptions="Center" FontSize="Medium"/>
+            <Label Text="Address" TextColor="Black" HorizontalOptions="Center" FontSize="Large"/>
+            <Label Text=" 1453 Metro Pkway, Fort Myers FL 33915" HorizontalOptions="Center" FontSize="Medium"/>
+            <Label Text="Follow Us" TextColor="Black" HorizontalOptions="Center" FontSize="Large"/>
+            <StackLayout HorizontalOptions="Center" Margin="5" Orientation="Horizontal">
+                      <Image Source="facebook.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapFacebook" NumberOfTapsRequired="1" Tapped="TapFacebook_Tapped">
+                            </TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                     <Image Source="youtube.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapYoutube" NumberOfTapsRequired="1" Tapped="TapYoutube_Tapped">
+                        </TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                     <Image Source="twitter.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapTwitter" NumberOfTapsRequired="1" Tapped="TapTwitter_Tapped">
+                        </TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                      <Image Source="instagram.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapInstagram" NumberOfTapsRequired="1" Tapped="TapInstagram_Tapped">
+                        </TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+          
+            <Label Text="Contact Us on 239-362-6609" TextColor="DarkBlue" HorizontalOptions="Center" FontSize="Large"/>
+            <Image Source="phone.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="TapCall" NumberOfTapsRequired="1" Tapped="TapCall_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
